@@ -8,30 +8,30 @@
             @click="editor.chain().focus().undo().run()"
             :disabled="!editor.can().undo()"
         >
-          <img src="src/assets/svg/icons/redo.svg" alt="">
+          <img src="/src/assets/svg/icons/redo.svg" alt="">
         </button>
         <button
             class="btn"
             @click="editor.chain().focus().redo().run()"
             :disabled="!editor.can().redo()"
         >
-          <img src="src/assets/svg/icons/undo.svg" alt="">
+          <img src="/src/assets/svg/icons/undo.svg" alt="">
         </button>
         <button
             class="btn"
             @click="editor.chain().focus().toggleHeading({ level: 1 }).run()"
 
         >
-          <img src="src/assets/svg/icons/bold.svg" alt="add-head">
+          <img src="/src/assets/svg/icons/bold.svg" alt="add-head">
         </button>
         <button
             class="btn"
             @click="editor.chain().focus().setParagraph().run()"
         >
-          <img src="src/assets/svg/icons/paragraph.svg" alt="add-paragraph">
+          <img src="/src/assets/svg/icons/paragraph.svg" alt="add-paragraph">
         </button>
         <button class="btn" @click="addImage">
-          <img src="src/assets/svg/icons/img.svg" alt="">
+          <img src="/src/assets/svg/icons/img.svg" alt="">
         </button>
         <button  class="btn-copy__html" @click="copyHtml" >Скопировать HTML</button>
       </div>
