@@ -1,16 +1,10 @@
 <template>
-  <div>
-    <TextEditor />
-  </div>
+  <TextEditor />
 </template>
 
 <script>
-import TextEditor from "./views/TextEditor.vue";
+import TextEditor from "/src/views/TextEditor.vue";
 export default {
-  components: {TextEditor}
-}
+  components: { TextEditor },
+};
 </script>
-
-<style scoped>
-
-</style>
