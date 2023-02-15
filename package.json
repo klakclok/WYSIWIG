@@ -1,24 +1,47 @@
 {
-  "name": "05ru",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@tiptap/extension-image": "^2.0.0-beta.217",
-    "@tiptap/extension-placeholder": "^2.0.0-beta.217",
-    "@tiptap/pm": "^2.0.0-beta.217",
-    "@tiptap/starter-kit": "^2.0.0-beta.217",
-    "@tiptap/vue-3": "^2.0.0-beta.217",
-    "vue": "^3.2.45"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "prettier": "2.8.4",
-    "vite": "^4.1.0"
-  }
+    "name": "05ru",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+        "format": "prettier .  --write"
+    },
+    "dependencies": {
+        "@tiptap/extension-image": "^2.0.0-beta.217",
+        "@tiptap/extension-placeholder": "^2.0.0-beta.217",
+        "@tiptap/pm": "^2.0.0-beta.217",
+        "@tiptap/starter-kit": "^2.0.0-beta.217",
+        "@tiptap/vue-3": "^2.0.0-beta.217",
+        "vue": "^3.2.45"
+    },
+    "devDependencies": {
+        "@rollup/plugin-eslint": "^9.0.3",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "eslint": "^8.34.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-vue": "^9.9.0",
+        "prettier": "2.8.4",
+        "vite": "^4.1.0"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "plugin:prettier/recommended",
+            "eslint:recommended",
+            "plugin:vue/vue3-recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {}
+    }
 }
