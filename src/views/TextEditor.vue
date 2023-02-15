@@ -2,30 +2,16 @@
   <div class="text-editor">
     <div class="wrapper">
       <div v-if="editor" class="menu">
-        <button
-          class="btn"
-          @click="undoBtn"
-          :disabled="!editor.can().undo()"
-        >
+        <button class="btn" @click="undoBtn" :disabled="!editor.can().undo()">
           <img src="/src/assets/svg/icons/redo.svg" alt="icon" />
         </button>
-        <button
-          class="btn"
-          @click="redoBtn"
-          :disabled="!editor.can().redo()"
-        >
+        <button class="btn" @click="redoBtn" :disabled="!editor.can().redo()">
           <img src="/src/assets/svg/icons/undo.svg" alt="icon" />
         </button>
-        <button
-          class="btn"
-          @click="toggleHeading"
-        >
+        <button class="btn" @click="toggleHeading">
           <img src="/src/assets/svg/icons/bold.svg" alt="add-head" />
         </button>
-        <button
-          class="btn"
-          @click="setParagraph"
-        >
+        <button class="btn" @click="setParagraph">
           <img src="/src/assets/svg/icons/paragraph.svg" alt="add-paragraph" />
         </button>
         <button class="btn" @click="addImage">
@@ -73,19 +59,18 @@ export default {
         throw e;
       }
     },
-    redoBtn(){
-      this.editor.chain().focus().redo().run()
+    redoBtn() {
+      this.editor.chain().focus().redo().run();
     },
-    undoBtn(){
-      this.editor.chain().focus().undo().run()
+    undoBtn() {
+      this.editor.chain().focus().undo().run();
     },
-    toggleHeading(){
-      this.editor.chain().focus().toggleHeading({ level: 1 }).run()
+    toggleHeading() {
+      this.editor.chain().focus().toggleHeading({ level: 1 }).run();
     },
-    setParagraph(){
-      this.editor.chain().focus().setParagraph().run()
-    }
-
+    setParagraph() {
+      this.editor.chain().focus().setParagraph().run();
+    },
   },
 
   mounted() {
