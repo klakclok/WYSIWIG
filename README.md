@@ -1,7 +1,19 @@
-# Vue 3 + Vite
+Касательно проекта:
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+1. Не разделил на компоненты - знаю, это похоже баг библиотеки, при вынесении на компоненты, начинает жутко лагать.
+2. Косяки в нейминге, но тоже из-за библиотеки.
 
-## Recommended IDE Setup
+В целом спасибо за тестовое, было интересно делать и самое главное не нагружало, делалось на легке!
 
--   [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+А так, я давно мониторю вашу компанию, ваши вакансии, много знакомых среди проджектов и разрабов, у прошлых разрабов
+брал
+фидбек тоже(Сидредин,Расул Джанаев)
+
+Знаком с вашим стеком, какие проекты на чем писались, на что были переписаны и тд. Так скажем, уже немного в курсе вашей
+внутренней кухни)
+
+По моему стэку можно все увидеть в резюме. Так же у меня высшее образование профильное, и есть хорошая база в
+алгоритмах,
+математике и в целом это усилило навыки оптимизации на фронте!
+
+Очень жду фидбека!
